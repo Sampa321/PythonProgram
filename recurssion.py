@@ -103,4 +103,31 @@ else:
     for i in range(0,n):
         print(fibo(i),end=" ") #0,1,1,2,3,5'''
 
+
+
+#power function using recursion:
+'''def pow(a,b):
+    if b==0:
+        return 1
+    elif b==1:
+        return a
+    else:
+        return a*pow(a,b-1)
+m=int(input("enter the base value"))
+n=int(input("enter the exponetial value:"))
+r=pow(m,n)
+print(f"{m}^{n}=",r)'''
+
+#frog jump:
+def frog(n):
+    if n==0:
+        return 1
+    elif n<0:
+        return 0
+    else:
+        return frog(n-1)+frog(n-2)+frog(n-3)
+h=int(input("enter height:"))
+step=frog(h)
+print("possible path:",step)
+
  
