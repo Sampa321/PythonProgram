@@ -21,7 +21,7 @@ else:
    print("not palindrom")'''
 
 #PRINT PALINDROME NUMBER BETWEEN A RANGE.
-n=int(input("enter the number:"))
+'''n=int(input("enter the number:"))
 a=int(input("enter the number:"))
 for i in range(n,a+1):
     rem=0
@@ -32,4 +32,9 @@ for i in range(n,a+1):
         sum=sum*10+rem
         i=i//10
     if(sum==temp):
-        print(temp)
+        print(temp)'''
+
+#Reverse a string.
+name=input("enter your name:")
+rev_str=name[::-1]
+print(rev_str)
